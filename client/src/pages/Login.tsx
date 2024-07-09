@@ -12,7 +12,7 @@ function Login() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError("");
-
+    console.log("import.meta.env.MODE :>> ", import.meta.env.MODE);
     // more custom validation would go here....
     if (!inputValues.email.trim() || !inputValues.password.trim()) {
       setError("Credentials missing");

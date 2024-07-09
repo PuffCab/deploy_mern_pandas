@@ -3,7 +3,7 @@ import "./App.css";
 import Login from "./pages/Login";
 
 import Register from "./pages/Register";
-import { getToken, isToken, removeToken } from "./utils/tokenServices";
+import { isToken, removeToken } from "./utils/tokenServices";
 import UserProfile from "./pages/UserProfile";
 
 function App() {

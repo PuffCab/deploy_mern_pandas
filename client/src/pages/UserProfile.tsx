@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { getToken } from "../utils/tokenServices";
 import { GetProfileresponse, User } from "../@types";
 

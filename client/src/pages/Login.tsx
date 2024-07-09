@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { baseUrl } from "../utils/baseUrl";
-import { LoginOkResponse, NotOkType, User } from "../@types";
+import { LoginOkResponse, NotOkType } from "../@types";
 
 function Login() {
   const [inputValues, setInputValues] = useState({

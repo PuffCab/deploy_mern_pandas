@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { getToken } from "../utils/tokenServices";
 import { GetProfileresponse, User } from "../@types";
+import { baseUrl } from "../utils/baseUrl";
 
 function UserProfile() {
   const [userProfile, setUserProfile] = useState<User | null>(null);
@@ -22,7 +23,7 @@ function UserProfile() {
 
       try {
         const response = await fetch(
-          "http://localhost:5002/api/users/profile",
+          `${baseUrl}/api/users/profile`,
           requestOptions
         );
         if (!response.ok && response.status === 401) {
